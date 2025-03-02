@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.skyve.org/xml/document" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Assessment" xsi:schemaLocation="http://www.skyve.org/xml/document ../../../schemas/document.xsd">
+    <persistent name="QTE_Assessment"/>
+    <singularAlias>Assessment</singularAlias>
+    <pluralAlias>Assessments</pluralAlias>
+    <iconStyleClass>fa fa-book</iconStyleClass>
+    <bizKey expression="Assessment"/>
+    <attributes>
+        <memo name="hygieneAssessment">
+            <displayName>Hygiene Assessment</displayName>
+        </memo>
+        <memo name="painAssessment">
+            <displayName>Pain Assessment</displayName>
+        </memo>
+        <memo name="continenceAssessment">
+            <displayName>Continence Assessment</displayName>
+        </memo>
+        <text name="sleepAssessment">
+            <displayName>Sleep Assessment</displayName>
+            <length>600</length>
+        </text>
+        <memo name="behaviourAssessment">
+            <displayName>Behaviour Assessment</displayName>
+        </memo>
+        <association type="aggregation" name="assessmentCreatedBy">
+            <displayName>Assessment Created By</displayName>
+            <documentName>User</documentName>
+        </association>
+        <dateTime name="assessmentReviewTime">
+            <displayName>Assessment Review Time</displayName>
+        </dateTime>
+    </attributes>
+</document>
